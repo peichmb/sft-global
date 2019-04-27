@@ -1,0 +1,115 @@
+! -----------------------------------
+! --- SFT CODE CONTROL PARAMETERS ---
+! -----------------------------------
+!
+! --- Number of phi- and theta- points
+360
+180
+! --- CFL parameter
+0.35
+! --- Polar caps definition [degrees]
+75.d0
+! --- Horizontal diffusion coefficient [km^2/s]
+250.d0
+! --- Final time [years]
+1.d0
+! --- Maximum number of steps (0 = unlimited)
+0
+! --- Random number generator seed
+1
+!
+! --- INFLOWS ---
+! ---------------
+!
+! --- Include inflows
+.true.
+! --- Azimuthally average inflows
+.false.
+! --- FWHM of smoothing gaussian [Mm]
+20.0
+! --- Number of substeps
+15
+! --- a
+1.4d8 1.14d12 
+! --- b
+1.d0
+! --- Light flux based inflows
+.false.
+! --- Polar filter mode (0 = none, 1 = Cameron & Schuessler, 2 = Err. Fn.)
+1
+! --- Filter central latitude (2)
+70.d0
+! --- Filter width
+5.d0
+!
+! --- INITIAL CONDITION ---
+! -------------------------
+!
+! --- Initial scenario
+'inflowtest'
+! --- I. cond. parameter #1
+10.
+! --- I. cond. parameter #2
+10.
+! --- I. cond. parameter #3
+0.d0
+!
+! --- NEW SOURCES ---
+! -------------------
+!
+! --- Include new sources
+.true.
+! --- AR input mode (1 = Random; 2 = Read from file)
+2
+! --- Input Active Region Record
+'data/ActiveRegionRecord.400'
+! --- Cycle length [years]
+13.d0
+! --- Cycle overlap [years]
+2.d0
+! --- Cycle time start [years]
+0.d0
+! --- Polarity of first cycle normal?
+.true.
+! --- Joy's law factor
+0.5d0
+! --- Tilt angle scattering
+0.d0
+! --- Activity factor
+1.d0
+! --- Mean active latitude at cycle start [degrees]
+40.d0
+! --- Latitude scattering at cycle start [degrees]
+10.d0
+! --- Mean active latitude at cycle end [degrees]
+5.d0
+! --- Latitude scattering at cycle end [degrees]
+5.d0
+! --- Maximum AR magnetic field density [gauss]
+374.d0
+!
+! --- OUTPUT PARAMETERS ---
+! -------------------------
+!
+! --- Verbose output
+.true.
+! --- Output directory
+'out'
+! --- Write inflow velocity maps
+.true.
+! --- Write magnetogram
+.true.
+! --- Writing interval (b and v fields) [days]
+1.d0
+! --- Write azimuthally averaged b field
+.false.
+! --- Write axial dipole moment
+.false.
+! --- Averaging / Dipole moment interval [days]
+27.d0
+! --- Write check points
+.false.
+! -- Checkpointing interval [years]
+5.d0
+
+
